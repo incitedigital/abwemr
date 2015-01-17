@@ -1,0 +1,137 @@
+/* CSS Document */
+
+*{
+	
+	margin: 0;
+	padding: 0;	
+}
+
+body {background-color: #83c120;
+	  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	  font-size: 10pt;
+
+}
+
+#wrapper {
+	width: 830px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+#masthead{
+	width: 830px;
+	margin: 0 auto;	
+	
+}
+
+.formheader {
+	font-size: 10pt;
+	display: block;
+	background-color: #526aa1;
+	padding: 5px;
+	color: #fff;	
+	font-weight: bold;
+
+}
+
+fieldset {
+
+	background-color: #fff;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+
+	padding: 10px;
+}
+
+legend {
+	
+	font-weight: bold;
+	padding: 5px;
+	}
+
+td {
+	padding: 10px;	
+}
+
+.label {
+	padding-bottom: 10px;
+	}
+
+.textbox:hover, .shorttextbox:hover {
+	background-color: #f3f2f2;
+}
+
+.textbox {
+	border: 1px solid #ccc;
+	width: 250px;
+	padding: 5px;
+}
+
+.shorttextbox {
+	border: 1px solid #ccc;
+	width: 250px;
+	padding: 5px;
+}
+
+#registrationtable {
+	font-size: 10pt;
+	line-height: 10pt;
+}
+
+.label {
+	display: block;
+	font-weight: bold;
+}
+
+.footercontainer {
+	width: 830px;
+	margin: 0 auto;	
+	color: #fff;
+	
+}
+
+.footerleft {
+	width: 375px;
+	float: left;	
+}
+
+.footerright {
+	width: 300px;
+	float: right;	
+	text-align: right;
+	
+}
+
+#coupon {
+		width: 800px;
+		height: 504px;
+		margin: 0 auto;
+	
+		position: relative;
+		
+}
+
+#print{
+	width: 800px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+#name {
+	color: #fff;
+	font-size: 18pt;
+	padding-top: 30px;	
+	padding-left: 30px;
+	position: absolute;
+	z-index: 22;
+	
+}
+
+.error {
+	width: 878px;
+	background-color: #FF0000;
+	color: #fff;	
+	height: 40px;
+	text-align:center;
+	padding-top: 20px;
+}

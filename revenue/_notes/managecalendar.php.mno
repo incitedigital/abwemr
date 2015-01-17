@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><info>	<infoitem key="UD_rsAnnouncements" value="name:announcementID;datatype:int,name:date;datatype:timestamp,name:subject;datatype:blob,name:message;datatype:blob,name:attachment;datatype:string,name:adminID;datatype:int" /></info>

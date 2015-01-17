@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/* SpryValidationTextField.css - version 0.4 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+
+body {
+	
+	background-image: url(../images/linen.jpg);	
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-top: 100px;
+	font-size:9pt;
+}
+
+#container {width: 475px;
+			height: 300px;
+			margin: 0 auto;
+			background-color: #6f00a0;
+			border: 1px;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: inset 0 0 2px 1px rgba(0,0,0, 0.1);
+	-moz-box-shadow: inset 0 0 2px 1px rgba(0,0,0, 0.1);
+	-webkit-box-shadow: inset 0 0 2px 1px rgba(0,0,0, 0.1);
+	-o-box-shadow: inset 0 0 2px 1px rgba(0,0,0, 0.1);
+			}
+
+#logo {
+	width: 450px;
+		
+}
+
+
+
+.login {
+	
+	
+	margin-left: 20px;
+	
+	
+}
+
+label {
+	width: 200px;
+	color: #fff;	
+	clear: both;
+	padding-bottom: 10px;
+	
+}
+
+select{
+	
+	width: 200px;
+	
+}
+
+#shadow {
+	width: 800px;
+	margin: 0 auto;	
+	background-image: url('../images/shadow.png');
+	padding-top: 20px;
+	height: 300px;
+	text-align: center;
+	color: #646464;
+	background-repeat: no-repeat;
+	}
+
+
+.submit {
+	margin-top: 15px;
+	padding: 5px; 
+	background-color: #fce753;
+	border-radius: 30px;
+	border: 0;
+	font-size: 15px;
+	font-weight: bold;
+		
+}
+
+
+.submit:hover {
+	
+	background-color: #65a254;	
+}
+
+input {
+	
+	
+	margin-bottom: 5px;	
+	width: 75px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 12pt;
+}
+
+.loginform, .password {
+	
+	width: 425px;	
+	border: 0;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+.error {
+	
+	margin-left: 150px;
+	text-align: center;
+	background-color: #ff0000;
+}
+
+.password {
+	}
+
+
+/* These are the classes applied on the error messages
+ * which prevent them from being displayed by default.
+ */ 
+.textfieldRequiredMsg, 
+.textfieldInvalidFormatMsg, 
+.textfieldMinValueMsg,
+.textfieldMaxValueMsg,
+.textfieldMinCharsMsg,
+.textfieldMaxCharsMsg,
+.textfieldValidMsg {
+	display: none;
+}
+
+/* These selectors change the way messages look when the widget is in one of the error states.
+ * These classes set a default red border and color for the error text.
+ * The state class (e.g. .textfieldRequiredState) is applied on the top-level container for the widget,
+ * and this way only the specific error message can be shown by setting the display property to "inline".
+ */
+.textfieldRequiredState .textfieldRequiredMsg, 
+.textfieldInvalidFormatState .textfieldInvalidFormatMsg, 
+.textfieldMinValueState .textfieldMinValueMsg,
+.textfieldMaxValueState .textfieldMaxValueMsg,
+.textfieldMinCharsState .textfieldMinCharsMsg,
+.textfieldMaxCharsState .textfieldMaxCharsMsg
+{
+	display: inline;
+	color: #fff;
+	margin-left: 60px;
+	
+}
+
+
+
+/* The next three group selectors control the way the core element (INPUT) looks like when the widget is in one of the states: * focus, required / invalid / minValue / maxValue / minChars / maxChars , valid 
+ * There are two selectors for each state, to cover the two main usecases for the widget:
+ * - the widget id is placed on the top level container for the INPUT
+ * - the widget id is placed on the INPUT element itself (there are no error messages)
+ */
+ 
+ /* When the widget is in the valid state the INPUT has a green background applied on it. */
+.textfieldValidState input, input.textfieldValidState {
+	background-color: #B8F5B1;
+}
+
+/* When the widget is in an invalid state the INPUT has a red background applied on it. */
+input.textfieldRequiredState, .textfieldRequiredState input, 
+input.textfieldInvalidFormatState, .textfieldInvalidFormatState input, 
+input.textfieldMinValueState, .textfieldMinValueState input, 
+input.textfieldMaxValueState, .textfieldMaxValueState input, 
+input.textfieldMinCharsState, .textfieldMinCharsState input, 
+input.textfieldMaxCharsState, .textfieldMaxCharsState input {
+	background-color: #FF9F9F;
+}
+
+/* When the widget has received focus, the INPUT has a yellow background applied on it. */
+.textfieldFocusState input, input.textfieldFocusState {
+	background-color: #FFFFCC;
+}
+
+/* This class applies only for a short period of time and changes the way the text in the textbox looks like.
+ * It applies only when the widget has character masking enabled and the user tries to type in an invalid character.
+ */
+.textfieldFlashText input, input.textfieldFlashText {
+	color: red !important;
+}
+
+/* When the widget has the hint message on, the hint text can be styled differently than the user typed text. */
+.textfieldHintState input, input.textfieldHintState {
+	/*color: red !important;*/
+}

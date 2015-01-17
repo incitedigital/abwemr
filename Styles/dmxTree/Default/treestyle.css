@@ -1,0 +1,200 @@
+/* BASIC CSS *****************************************************/
+.dmxtree, .dmxtree ul  {
+	margin      : 0px;
+	padding     : 0px;
+	white-space : normal;
+}
+
+.dmxtree li {
+	margin         : 0px;
+	padding        : 0px 0px 0px 18px;
+	list-style     : none;
+	background-repeat: no-repeat;
+	background-position: top left;
+	text-align:left;
+	line-height:18px;
+	clear:both;
+}
+
+.dmxtree li:focus {
+  outline:none;
+}
+
+.dmxtree img {
+	float          : left;
+	margin         : auto 2px auto 0px;
+}
+
+
+.dmxtree    .folderopened
+.dmxtree    .folderclosed
+.dmxtree    .file,
+.dmxtree    li div.plusminus, 
+.dmxtree    li div.arrow {
+	height : 18px;
+	width  : 18px;
+}
+
+
+.dmxtree    li div.plusminus, 
+.dmxtree    li div.arrow {
+	float            : left;
+	margin-left      : -18px;
+	width            : 18px;
+	height           : 18px;
+	background-repeat: no-repeat;
+}
+
+
+
+/* IE 6 and below */ 
+* html .dmxtree    li div.plusminus, 
+* html .dmxtree    li div.arrow {
+	padding-left: 18px;
+	background-position: top 18px;
+}
+
+.dmxtree {
+	font-size   : 12px;
+	font-family : Tahoma;
+}
+
+.dmxtree  ul {  
+	display:list-item;
+	list-style:none; 
+}
+
+.dmxtree li.collapsed ul {  
+	display:none; 
+}
+
+.dmxtree div.nobullets {
+  display:none;
+}
+
+
+/* Toolbar --------------------------------------------------------------------- */
+.dmxtree .toolbar {
+	background      : threedface;
+	border-bottom   : 1px solid threedshadow;
+	padding         : 1px 0px;
+	-moz-appearance : toolbox;
+	position        : absolute;
+	z-index         : 50;
+	top             : -100px;
+	left            : 0px;
+	opacity         : 0;
+	font-family     : Tahoma;
+	font-size       : 11px;
+  display         : none;
+  height          : 18px;
+}
+
+.dmxtree .toolbar a {
+	color:blue;
+	font :menu;
+	text-decoration:none;
+	padding:1px 6px;
+  line-height:14px;
+}
+
+.dmxtree .toolbar a:focus {
+	outline:none;
+}
+
+.dmxtree .toolbar span {
+	-moz-appearance : toolbarbutton; 
+	padding:3px;
+  margin-top:1px;
+  line-height:18px;
+}
+.dmxtree .toolbar a.expandlink {
+	padding-left:18px;
+	background:url(plus.gif) 0px -2px no-repeat;
+}
+
+.dmxtree .toolbar a.collapselink {
+	padding-left:18px;
+	background:url(minus.gif) 0px -2px no-repeat;
+}
+
+.dmxtree .toolbar a.closelink {
+	color:#999999;
+	font-weight:bold;
+	float:right;
+	font-family:Verdana, sans-serif;
+	font-size:12px;
+	line-height:12px;
+  margin-right:1px;
+}
+
+.dmxtree .toolbar a:hover {
+	background-color:highlight;
+	color:highlighttext;
+	text-decoration:none;
+	-webkit-appearance:sliderthumb-vertical;  
+}
+
+.dmxtree .toolbar a:-moz-any-link {
+	background-color:transparent;
+	color:#000033 !important;
+}
+
+
+
+/* IMAGES ---------------------------------------------------------------------- */
+
+
+/* ------------- folder ------------- */
+      .dmxtree    li .folder                             {background-image:url(folder_opened.png);}
+      .dmxtree    li.collapsed > .folder {background-image:url(folder_closed.png);}
+* html  .dmxtree    li.collapsed .folder       {background-image:url(folder_closed.png);}/* IE 6 and below */
+
+
+/* -------------- file -------------- */
+.dmxtree    .file {background-image:url(file.png);}
+
+
+/* ------------ plusminus ------------ */
+     .dmxtree    div.plusminus                           {background-image:url(minus.gif);}
+     .dmxtree    li.collapsed > .plusminus {background-image:url(plus.gif);}
+* html .dmxtree    li.collapsed .plusminus     {background-image:url(plus.gif);}/* IE 6 and below */
+
+
+/* -------------- arrow -------------- */
+      .dmxtree  div.arrow                           {background-image:url(arrowopened.gif);}
+      .dmxtree  li.collapsed > .arrow {background-image:url(arrowclosed.gif);}
+* html   .dmxtree  li.collapsed .arrow     {background-image:url(arrowclosed.gif);}/* IE 6 and below */
+
+.dmxtree    li .progress {
+  background-image:url(progress.gif)!important;
+  background-repeat:no-repeat !important;
+  background-position:center center !important;
+}
+
+
+/* ------------ showStruct ------------ */
+.showStruct.dmxtree, .showStruct.dmxtree ul  { background-image:url(line.gif);background-repeat:repeat-y;}
+* html   .dmxtree, * html   .dmxtree ul { background-image:none;}
+* html   .showStruct  .dmxtree, * html   .showStruct  .dmxtree ul { background-image:url(line.gif);background-repeat:repeat-y;}
+
+.showStruct.singleRootFolder  { background-image:none !important;}
+* html   ul.singleRootFolder { background-image:none !important;}
+
+.showStruct.dmxtree li  { background-image:url(node.gif);}
+* html  .dmxtree li   { background-image:none;}
+* html  .showStruct  .dmxtree li  { background-image:url(node.gif);}
+
+.showStruct.dmxtree li.lastItem  { background-image:url(lastnode.gif);}
+* html  .dmxtree li.lastItem  { background-image:none;}
+* html  .showStruct  .dmxtree li.lastItem  { background-image:url(lastnode.gif);}
+
+.showStruct.dmxtree li.firstnode { background-image:url(firstnode.gif);}
+* html  .dmxtree li.firstnode { background-image:none;}
+* html  .showStruct  .dmxtree li.firstnode { background-image:url(firstnode.gif);}
+
+.showStruct.dmxtree > li.singleRootFolder { background-image:url(hline.gif);}
+* html .showStruct  ul.dmxtree li.singleRootFolder { background-image:url(hline.gif) !important;}
+
+
+

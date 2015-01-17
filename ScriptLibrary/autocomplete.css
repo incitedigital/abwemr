@@ -1,0 +1,19 @@
+/*
+ * Ajax Autocomplete
+ * Version: 1.0.9
+ * (c) 2011 DMXzone.com
+ * @build 25-08-2011 10:30:12
+ */
+.ac_results{padding:0;border:1px solid #6FBEFF;background-color:#EFF8FF;overflow:hidden;z-index:99999;}.ac_results ul{width:100%;list-style-position:outside;list-style:none;padding:0;margin:0;}.ac_results li{margin:0;padding:2px 5px;cursor:default;display:block;font:menu;font-size:11px;line-height:14px;overflow:hidden;}.ac_title{font-weight:bolder;}.ac_loading{background:Window url('indicator.gif') right center no-repeat;}.ac_over{background-color:#d2fb8f;color:#000;}.ac_highlight{color:#F00;}
+
+
+#windowframe{
+	height: 475px;
+	width: 500px;
+}
+
+table {
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
